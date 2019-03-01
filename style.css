@@ -1,0 +1,542 @@
+body {
+    background-color: #5b7494;
+
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+}
+
+.header {
+    text-align: center;
+    background-color: white;
+    padding-top: 20px;
+    
+    
+}
+
+.header h2 {
+    color: #4e5c5f;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.header span {
+    color: #7f7f7f;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.header select {
+    background-color: #e5e5e5;
+    border-radius: 20px;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #7f7f7f;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 7em;
+    
+}
+
+.header option {
+    font-size: 16px;
+    font-weight: 600;
+   
+}
+
+.header select:focus {
+    outline:none;
+}
+
+.header button {
+    background-color: #2f5f7c;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 45px;
+    border-radius: 25px;
+    border: none;
+    font-size: 24px;
+    margin-top: 80px;
+    margin-bottom: 110px;
+    outline: none;
+    box-shadow: 5px 5px 25px 0px lightgrey;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: lightseagreen;
+}
+
+header button:focus {
+    outline: none;
+}
+
+.mountain-events {
+    border: 1px solid violet;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(images/background.jpg);
+    padding-right: 180px;
+    padding-left: 180px;
+   
+}
+
+/************** SEARCH LINE *****************/
+
+.search-line {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    margin-bottom: 75px;
+    margin-top: 80px;
+    
+}
+
+.search-line .events-calendar {
+    font-size: 18px;
+    padding: 15px 15px 15px 0;
+    white-space: nowrap;
+}
+
+.menu-small {
+    font-size: 18px;
+    padding: 15px 15px 15px 0;
+    white-space: nowrap;
+    display: none;
+
+}
+
+.menu-small:hover {
+    color: lightseagreen;
+
+}
+
+.search-small {
+    font-size: 18px;
+    padding: 15px;
+    display: none;
+}
+
+.search-small:hover {
+    color: lightseagreen;
+}
+
+.search-line form {
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 25px;
+    white-space: nowrap;
+    
+}
+
+.search-line form:hover {
+    color: lightseagreen;
+    border-color: lightseagreen;
+}
+
+.search-line form i {
+    padding-right: 15px;
+    font-size: 18px;
+}
+
+.search-line input {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.search-line input::placeholder:hover {
+    color: lightseagreen;
+}
+
+
+
+.search-line input:focus {
+    outline: none;
+    
+    
+}
+
+.search-line input::placeholder {
+    color: white;
+}
+
+
+
+.search-line input:focus::placeholder {
+    color: transparent;
+}
+
+
+/*************  Nav arrows ****************/
+
+.left-arrow, .right-arrow {
+   height: 76px;
+   width: 130px;
+   border-radius: 50px;
+   background-color: rgba(255, 255, 255, 0.25);
+  
+   display: flex;
+   align-items: center;
+   color: white;
+   font-size: 16px;
+   padding-left: 30px;
+   padding-right:30px;
+   position: relative;
+   
+   
+}
+
+.left-arrow:hover {
+    background-color: lightseagreen;
+}
+.right-arrow:hover {
+    background-color: lightseagreen;
+    
+}
+
+.left-arrow-container,
+.right-arrow-container {
+    position: absolute;
+    top: 580px;
+    overflow: hidden;
+    width: 66px;
+    
+}
+
+.left-arrow-container {
+    left: 0;
+}
+
+.right-arrow-container {
+    right: 0;
+}
+
+.left-arrow {
+    justify-content: flex-end;
+    left: -67px;
+    /* left: -67px; */
+}
+.right-arrow {
+    justify-content: flex-start;
+    
+}
+
+
+/*************** Navigation*******************/
+
+.nav-mountains {
+    /* border: 1px solid black; */
+    margin-bottom: 80px;
+    user-select: none;
+}
+
+.nav-mountains ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav-mountains ul li {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.25);
+    white-space: nowrap;
+}
+
+.nav-mountains ul li:hover {
+    color: lightseagreen;
+}
+
+.nav-mountains ul li.active {
+    border-bottom: 3px solid white;
+}
+
+
+
+
+
+/************* Card Gallery *********************/
+
+.card-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.card-item {
+    background-color: white;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    
+    
+
+}
+
+.card-item h5 {
+    text-transform: uppercase;
+    color: #305f7d;
+    font-size: 14px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.card-item p:first-of-type {
+    color: #7f7f7f;
+    font-size: 12px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    
+}
+
+.card-item p:nth-of-type(2) {
+    color: #305f7d;
+    padding-left: 20px;
+    font-size: 12px;
+    
+}
+
+.card-item button {
+    background-color: #305f7d;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: table;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-bottom: 20px; 
+    user-select: none;
+    outline:none;
+    cursor: pointer;
+}
+
+.join-line {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    color: black;
+    display: none;
+}
+
+.card-item button:hover {
+    background-color: lightseagreen;
+}
+
+.join-line div:hover {
+    font-weight: 700;
+}
+
+/**************** MEDIA ******************/
+
+@media screen and (max-width: 1025px) {
+
+    .nav-mountains {
+        margin-bottom: 50px;
+    }
+
+    .mountain-events {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .nav-mountains ul li {
+        border-right: 2px solid rgba(255, 255, 255, 0.25);
+    }
+    .nav-mountains ul li:last-child {
+        border-right: none;
+        
+    }
+
+    .card-gallery {
+        /* align-content: stretch; */
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 785px) {
+
+    .header {
+        padding: 20px;
+    }
+
+     
+    .nav-mountains {
+        margin-bottom: 20px;
+    }
+
+
+    .mountain-events {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .left-arrow-container,
+    .right-arrow-container {
+    display: none;
+}
+
+.nav-mountains ul li:last-child {
+    display: none;
+    
+}
+
+.nav-mountains ul li:nth-last-child(2) {
+    border-right: none;
+}
+
+}
+
+@media screen and (max-width: 550px) {
+
+    .container {
+       
+        background-color: white;
+    } 
+
+    .header {
+        height: 100vh;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    
+    }
+
+    .header button {
+
+        margin-top: 25vh;
+        margin-bottom: 5vh;
+      
+    }
+
+    .header span{
+        margin-bottom: 10px;
+        margin-top: 10px;
+            
+        
+    }
+
+    .mountain-events {
+        padding-right: 0px;
+        padding-left: 0px;
+       
+    }
+
+    .search-line {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .search-line .events-calendar {
+        display: none;
+    }
+
+    .menu-small {
+        display: block;
+        font-size: 20px;
+        
+
+    }
+
+    .menu-small::first-letter {
+        font-size: 25px;
+    }
+
+    .nav-mountains {
+        margin-bottom: 0;
+        
+    }
+
+    .search {
+        display: none;
+    }
+    .search-small {
+        display: block;
+        font-size: 25px;
+    }
+    
+    .nav-mountains ul li:nth-child(4),
+    .nav-mountains ul li:nth-child(3) {
+        display: none;
+       
+    }
+
+    .nav-mountains ul li {
+        font-size: 18px;
+        border-right: none;
+        border-bottom: none;
+       
+        
+    }
+
+    .nav-mountains ul li.active {
+        border-bottom: 5px solid yellow;
+    }
+
+    .card-item button {
+        display: none;
+     }
+
+     .card-gallery {
+         background-color: white;
+         padding-top: 20px;
+     }
+
+     .card-item {
+         border-radius: 0;
+         box-shadow: 3px 3px 3px 1px grey;
+     }
+
+     .join-line {
+         display: flex;
+     }
+
+     .card-item p:nth-of-type(2) {
+         display:none;
+     }
+
+     .card-item h5 {
+         color: black;
+         text-transform: capitalize;
+         font-size: 18px;
+     }
+
+}
