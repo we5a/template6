@@ -723,12 +723,20 @@ header button:focus {
         
     }
 
+    .burger-search span:hover{
+        color: lightseagreen;
+    }
+
     .top-climbers-small ul li {
         flex-grow: 1;
         color: white;
         margin: 0;
         padding:0;
         
+    }
+
+    .top-climbers-small ul li:hover {
+        color: lightseagreen;
     }
     
     .top-climbers-small ul li.active {
