@@ -687,54 +687,102 @@ header button:focus {
 @media screen and (max-width: 550px) {
     .top-climbers-small {
         display: block;
-        width: 100%;
-        background-color: lightblue;
+        width: 100vw;
+        /* background-color: lightblue; */
+        background-image: url(images/background.jpg);
+        background-position: center;
         text-align: center;
+        margin-bottom: 20px;
+    
     }
+
     .sport-awards {
         display: none;
     }
 
+    .award p {
+        color: white;
+    }
+    .award img {
+        width: 10vw;
+    }
+
      .top-climbers-small .burger-search {
             font-size: 30px;
-        /*
-        display: flex;
-        justify-content: space-between;
-        margin-left: 30px;
-        margin-right: 30px;
-        
-    } */}
-
+            } 
     .top-climbers-small ul {
         list-style: none;
         font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
+        width: 90vw;
         display: flex;
         justify-content: space-between;
+        
+        margin-bottom: 0;
 
-        border: 1px solid white;
-
-        margin-right: 0;
-        margin-left: 0;
+        
     }
 
     .top-climbers-small ul li {
-        border-bottom: 5px solid yellow;
         flex-grow: 1;
+        color: white;
+        margin: 0;
+        padding:0;
         
     }
+    
+    .top-climbers-small ul li.active {
+        
+        border-bottom: 5px solid yellow;
+    }
+
+    .comment {
+        box-shadow: 0 0 3px 3px #c0bebe;
+        overflow: hidden;
+        
+    }
+
+     .climber-comment .rate-comment,
+    .climber-name .number {
+        display: none;
+        
+    }
+
+    .climber-name {
+        width: 93vw;
+        box-shadow: none;
+       
+        border-radius: 0;
+    }
+
+    .climber-name img {
+        margin-top: 20px;
+    }
+    .climber-comment {
+        width: 93vw;
+        box-shadow: none;
+        
+        border-radius: 0;
+        flex-wrap: nowrap;
+
+    }
+
+    .climber-comment p {
+        flex-basis: 90%;
+    }
+
+    .climber-comment .deploy-arrow {
+        font-size: 20px;
+        margin-right:5vw;
+        padding: 0;
+        height: 25px;
+        width: 25px;
+        flex-basis: auto;
+        
+       
+       
+    }
+
+
 }
 
-/*
-
-
-.nav-mountains ul li {
-        border-right: none;
-        border-bottom: none;
-       
-        
-    }
-    .nav-mountains ul li.active {
-    }
-
-*/
