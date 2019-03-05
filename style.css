@@ -102,11 +102,9 @@ header button:focus {
     justify-content: space-between;
     text-transform: uppercase;
     color: white;
-    margin-top: 20px;
     margin-bottom: 20px;
-    
     margin-bottom: 75px;
-    margin-top: 80px;
+    padding-top: 20px;
     
 }
 
@@ -450,6 +448,8 @@ header button:focus {
         margin-bottom: 5vh;
       
     }
+
+    
 
     .header span{
         margin-bottom: 10px;
