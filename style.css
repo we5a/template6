@@ -86,7 +86,7 @@ header button:focus {
 }
 
 .mountain-events {
-    border: 1px solid violet;
+    
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url(images/background.jpg);
@@ -234,7 +234,7 @@ header button:focus {
 .left-arrow {
     justify-content: flex-end;
     left: -67px;
-    /* left: -67px; */
+    
 }
 .right-arrow {
     justify-content: flex-start;
@@ -245,7 +245,7 @@ header button:focus {
 /*************** Navigation*******************/
 
 .nav-mountains {
-    /* border: 1px solid black; */
+   
     margin-bottom: 80px;
     user-select: none;
 }
@@ -389,7 +389,7 @@ header button:focus {
     }
 
     .card-gallery {
-        /* align-content: stretch; */
+        
         justify-content: space-around;
     }
 }
@@ -576,14 +576,14 @@ header button:focus {
 }
 
 .comment {
-    /* border: 1px solid orange; */
+    
     position: relative;
     margin-bottom: 20px;
 
 }
 
 .climber-name {
-    /* border: 1px solid blue; */
+   
     height: 40px;
     width: 280px;
     border-top-right-radius: 60px;
@@ -688,8 +688,7 @@ header button:focus {
     .top-climbers-small {
         display: block;
         width: 100vw;
-        /* background-color: lightblue; */
-        background-image: url(images/background.jpg);
+         background-image: url(images/background.jpg);
         background-position: center;
         text-align: center;
         margin-bottom: 20px;
@@ -759,8 +758,8 @@ header button:focus {
     .climber-name {
         width: 93vw;
         box-shadow: none;
-       
         border-radius: 0;
+        
     }
 
     .climber-name img {
@@ -769,7 +768,6 @@ header button:focus {
     .climber-comment {
         width: 93vw;
         box-shadow: none;
-        
         border-radius: 0;
         flex-wrap: nowrap;
 
@@ -783,8 +781,8 @@ header button:focus {
         font-size: 20px;
         margin-right:5vw;
         padding: 0;
-        height: 25px;
-        width: 25px;
+        height: 30px;
+        width: 30px;
         flex-basis: auto;
         
        
