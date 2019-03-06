@@ -218,9 +218,11 @@ header button:focus {
 
 .left-arrow:hover {
     background-color: lightseagreen;
+    cursor: pointer;
 }
 .right-arrow:hover {
     background-color: lightseagreen;
+    cursor: pointer;
     
 }
 
@@ -314,11 +316,10 @@ header button:focus {
     border-radius: 7px;
     overflow: hidden;
     margin-bottom: 16px;
-    
-    
-  margin-right: 5px;  
-
+    margin-right: 5px;  
 }
+
+
 
 .card-item h5 {
     text-transform: uppercase;
@@ -686,6 +687,7 @@ header button:focus {
 .climber-comment .deploy-arrow:hover {
     color: lightseagreen;
     border-color: lightseagreen;
+    cursor: pointer;
 }
 
 .climber-comment .rate-comment {
@@ -698,6 +700,8 @@ header button:focus {
 
 /***************************************/
 /****MEDIA FOR TOP CLIMBERS*************/
+
+
 @media screen and (max-width: 550px) {
     .top-climbers-small {
         display: block;
