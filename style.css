@@ -1,8 +1,21 @@
 body {
-    background-color: #5b7494;
+     
+     background: url(images/back_mount.jpg);
+     background-attachment: fixed;
+     background-position: center;
+    
+     
 
     
 }
+
+.layer {
+    /* background-color: rgba(146, 164, 188, 0.6); */
+    /* background-color: rgba(52, 70, 95, 0.7); */
+    background-color: rgba(30, 30, 31, 0.25);
+}
+
+
 
 * {
     box-sizing: border-box;
@@ -48,7 +61,7 @@ body {
     font-weight: 600;
     color: #7f7f7f;
     font-family: Arial, Helvetica, sans-serif;
-    width: 7em;
+    width: 6.5em;
     
 }
 
@@ -71,7 +84,7 @@ body {
     border: none;
     font-size: 24px;
     margin-top: 80px;
-    margin-bottom: 110px;
+    margin-bottom: 50px;
     outline: none;
     box-shadow: 5px 5px 25px 0px lightgrey;
     cursor: pointer;
@@ -102,9 +115,8 @@ header button:focus {
     justify-content: space-between;
     text-transform: uppercase;
     color: white;
-    margin-bottom: 20px;
     margin-bottom: 75px;
-    padding-top: 20px;
+    padding-top: 60px;
     
 }
 
@@ -432,6 +444,10 @@ header button:focus {
         background-color: white;
     } 
 
+    .layer {
+        background-color: white;
+    }
+
     .header {
         height: 100vh;
         display: flex;
@@ -443,10 +459,8 @@ header button:focus {
     }
 
     .header button {
-
         margin-top: 25vh;
         margin-bottom: 5vh;
-      
     }
 
     
@@ -562,8 +576,8 @@ header button:focus {
 }
 
 .top-climbers .sport-awards {
-    margin-top: 30px;
-    margin-bottom: 75px;
+    margin-top: 50px;
+    margin-bottom: 55px;
     text-align: center;
 }
 
@@ -704,20 +718,28 @@ header button:focus {
     }
     .award img {
         width: 10vw;
+        
     }
 
      .top-climbers-small .burger-search {
             font-size: 30px;
-            } 
+            padding-top: 20px;
+             margin-bottom: 20px;
+             padding-right: 30px;
+             padding-left: 30px;
+        } 
+
+
     .top-climbers-small ul {
-        list-style: none;
+        
+       
         font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
-        width: 90vw;
+        width: 100vw;
         display: flex;
         justify-content: space-between;
-        
         margin-bottom: 0;
+        margin-left: -7vw;
 
         
     }
@@ -730,7 +752,8 @@ header button:focus {
         flex-grow: 1;
         color: white;
         margin: 0;
-        padding:0;
+        padding: 0;
+        list-style: none;
         
     }
 
@@ -738,7 +761,7 @@ header button:focus {
         color: lightseagreen;
     }
     
-    .top-climbers-small ul li.active {
+    .top-climbers-small ul li.actives {
         
         border-bottom: 5px solid yellow;
     }
